@@ -1,0 +1,10 @@
+{
+	"hello": "Bonjour!",
+
+	"empty_login" : "Pas de nom d'utilisateur ou mot de passe n'a pas été prévu.",
+
+	"login" : "S'identifier",
+	"register" : "Inscription",
+	"your_username" : "Ton nom d'utilisateur",
+	"your_password" : "Votre mot de passe"
+}

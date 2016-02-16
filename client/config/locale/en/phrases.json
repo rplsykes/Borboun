@@ -1,0 +1,7 @@
+{
+	"empty_login" : "You must provide a username and password.",
+	"server_disconnect" : "Disconnected from server.",
+	"server_error" : "Error connecting to server.",
+	"invalid_user" : "Your credentials are invalid.",
+	"conn_not_accepted" : "Access Denied!"
+}

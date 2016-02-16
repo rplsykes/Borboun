@@ -1,0 +1,126 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+		<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+
+		<title>Game Client</title>
+	</head>
+
+	<body>
+
+		<!-- No JavaScript Alert -->
+		<noscript class="alert">
+			You need to enabled JavaScript to play!
+		</noscript>
+	
+		<!-- Container -->
+		<div class="container">
+	
+			<!-- Begin Alerts -->
+			<div id="alert">
+				<span id="alert-text"></span>
+				<button id="alert-ok" style="display: none;"> OK </button>
+			</div>
+			<!-- End Alerts -->
+
+			<!-- Intro Screen -->
+			<div id="intro">
+
+				<div class="gameTitle"> Last Gate </div>
+				<div class="gameSubTitle"> A massively multiplayer game </div>
+
+				<section id="parchment" id="intro-content">
+
+					<!-- Login -->
+					<article id="login">
+					
+	
+						<form action="none" method="get" accept-charset="utf-8">
+							<div class="form-control">
+								<input type="text" id="loginUsername" class="stroke" name="loginUsername" placeholder="Your Username" maxlength="15">
+							</div>
+
+							<div class="form-control">
+								<input type="password" id="loginPassword" class="sttroke" name="loginPassword" placeholder="Your Password" maxlength="30">
+							</div>
+
+							<div id="login-btn">
+								<button class="primary-btn">Login</button>
+							</div>
+						</form>
+					</article>
+					<!-- End Login -->
+
+					<!-- Register -->
+					<article id="register" style="display: none">
+						<h1> Register </h1>
+						
+						<form method="post">
+							<div class="form-control">
+								<input type="text" id="regUsername" class="stroke" name="regUsername" placeholder="Chosen Username" maxlength="15">
+							</div>
+							<div class="form-control">
+								<input type="text" id="regEmail" class="stroke" name="regUsername" placeholder="Chosen Email" maxlength="100">
+							</div>
+							<div class="form-control">
+								<input type="password" id="regPassword" class="stroke" name="regPassword" placeholder="Chosen Password" maxlength="30">
+							</div>
+							<div class="form-control">
+								<input type="text" id="regConPassword" class="stroke" name="regConPassword" placeholder="Confirm Password" maxlength="30">
+							</div>
+
+							<div id="confirm-register-btn">
+								<button>Confirm</button>
+							</div>
+
+							<div id="confirm-cancel-btn">
+								<button>Cancel</button>
+							</div>
+						</form>
+					</article>
+
+					<!-- About --> 
+					<article id="about" style="display: none">
+						<h1> About </h1>
+
+						<p>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, illum doloremque saepe. Quod totam error deleniti eum! Obcaecati aliquam dicta repudiandae eum ipsam neque eveniet fugiat dolorum quam, ducimus. Exercitationem!</span>
+							<span>Nisi officia nostrum nam praesentium ipsa nulla saepe labore, architecto cum! Deleniti quae corporis, deserunt dolorum autem perferendis tempore. Accusantium voluptate a temporibus recusandae aut eaque ea facere sed dolorum!</span>
+							<span>Consectetur officia labore fugiat possimus saepe, cumque doloremque? Odio ratione molestias tempore aliquid rerum dolores, soluta sint architecto similique ullam, repellendus minima perferendis, nemo culpa accusamus neque cum quod laborum.</span>
+						</p>
+						<p>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus vitae facilis maxime reprehenderit incidunt, tempore in praesentium amet nobis adipisci repellendus, dicta repudiandae, vero doloremque unde voluptas asperiores minima dignissimos.</span>
+							<span>Enim aperiam excepturi dignissimos quod libero sunt, iusto, adipisci accusamus doloremque quasi officia numquam esse illum omnis ratione hic aliquam quisquam cum, ut. Similique quidem ex eos magnam et, nemo.</span>
+							<span>Rem aspernatur cumque, consequuntur impedit illo assumenda saepe! Molestias, quas, error! Perferendis modi accusamus vero, deleniti voluptates possimus at cum sint animi, numquam esse sapiente! Molestiae obcaecati illum suscipit culpa?</span>
+						</p>
+					</article>
+
+					<!-- Credits -->
+					<article id="credits" style="display: none">
+						<h1> Credits </h1>
+
+						<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ad, sapiente aspernatur officia. Vitae quo, nemo, non iure quia cupiditate, ratione excepturi ea aliquid soluta sequi eius quod, sed mollitia.</span><span>Pariatur laudantium aspernatur eum ipsa dolores minima nam fuga quia incidunt corrupti debitis omnis quibusdam animi rem ea ipsam, sunt, veniam sequi. Provident officia quis porro voluptatibus a aliquid nostrum.</span></p>
+					</article>
+
+					<!-- Canvas -->
+					<article id="game" style="display: none">
+						<h1> Welcome, <span id="user"></span> </h1>
+						
+						<!-- Begin Canvas -->
+						<canvas id="gameCanvas">
+							Your browser does not support canvas. Please update.
+						</canvas>
+					</article>
+
+				</section>
+			</div>
+		</div>
+
+		<script data-main="js/main" src="js/lib/require.js"></script>
+
+	</body>
+</html>
