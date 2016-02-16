@@ -2,8 +2,8 @@ define([], function() {
     
     // Site Routes
 	var Routes =  {
-        "login":  { template: "/client/views/login/login.html", 
-                    src: "/client/views/login/login.js" },
+        "login":  { template: "/views/login/login.html", 
+                    src: "/views/login/login.js" },
 	}
 
 	return Routes;
