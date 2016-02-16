@@ -11,6 +11,7 @@ function main() {
 	// When a connection is made.
 	server.onConnect(function(connection) {
 		console.log("Connection from " + connection.getIP());
+		console.log(connection.getConnectionCount() + " clients now connected!");
 	});
 
 }

@@ -27,6 +27,7 @@ Server.prototype.create = function() {
 	http.listen(Config.Server.Port);
 	this.io = require('socket.io')(http);
 
+	// Connect Callback
 	this.io.on('connection', function(connection) {
 
 		if ( self.connection_callback) {
@@ -37,11 +38,24 @@ Server.prototype.create = function() {
 		}
 
 	});
+
+	// Disconnect Callback.
+	this.io.on('disconnect', function(connection) { 
+
+		if ( self.disconnect_callback() ) { 
+			self.disconnect_callback();
+		}
+		
+	});
 }
 
 // Called when a connection is made to the server.
 Server.prototype.onConnect = function(callback) {
 	this.connection_callback = callback;
+}
+
+Server.prototype.onDisconnect = function(callback) { 
+	this.disconnect_callback = callback;
 }
 
 Server.prototype.onError = function(callback) {
