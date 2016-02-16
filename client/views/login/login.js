@@ -1,7 +1,7 @@
 define(["jquery", "app"], function($, App) {
     
-    // Go to login page.
-    App.routeTo("login");
+    // Go to register page
+    console.log("hello world!");
     
     
     
