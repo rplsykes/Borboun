@@ -1,6 +1,6 @@
 'use strict';
 
-define(["jquery", "config"], function($, config) {
+define(["jquery", "config", "routes"], function($, config, Routes) {
 
 	var assets = null;
 
@@ -39,7 +39,18 @@ define(["jquery", "config"], function($, config) {
 			if ( showOK ) {
 				$("#alert-ok").show();
 			}
-
-		}
+		},
+        
+        routeTo: function(route) {
+            if ( !route ) {
+                throw "No route given!";
+            }
+            
+            $("#content").load(Routes[route].template);
+            
+            if ( Routes[route].src != undefined ) {
+                require([Routes[route].src]);
+            }
+        }
 	};
 }); 
