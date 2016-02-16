@@ -2,4 +2,58 @@ html,body {
     padding:0px;
     margin:0px;
     background-image: url("../img/new_background.jpg");
+    font-family: open sans;
+}
+
+#login_wrapper {
+    width: 980px;
+    height:auto;
+    margin: auto;
+}
+
+#loginbox {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    top: 200px;
+    left:200px;
+    background-image: url("../img/login_box.png");
+}
+
+#username_fld {
+    width: 248px;
+    height: 40px;
+    position:relative;
+    top:110px;
+    left:170px;
+    background-image: url("../img/field_btn.png");
+    border: none;
+    background-color: transparent;
+    padding-left: 15px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#password_fld {
+    width: 248px;
+    height: 40px;
+    position:relative;
+    top:110px;
+    left:170px;
+    background-image: url("../img/field_btn.png");
+    border: none;
+    background-color: transparent;
+    padding-left: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+#login_header_text {
+    width: 340px;
+    position: relative;
+    top: 80px;
+    left: 120px;
+    text-align: center;
+    color: white;
 }
