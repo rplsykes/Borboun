@@ -1,9 +1,6 @@
 {
 	"manifest": [
 		{ "id": "fr", "src":"/config/locale/fr/phrases.json" },
-		{ "id": "en", "src":"/config/locale/en/phrases.json" },
-
-		{ "id": "gold_pile", "src":"/img/sprites/gold_pile.png" },
-		{ "id": "zombie", "src":"/img/sprites/zombie.png" }
+		{ "id": "en", "src":"/config/locale/en/phrases.json" }
 	]
 }

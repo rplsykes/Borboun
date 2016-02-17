@@ -2,4 +2,81 @@ html,body {
     padding:0px;
     margin:0px;
     background-image: url("../img/new_background.jpg");
+    font-family: open sans; 
+    overflow: hidden;
+}
+
+#login_wrapper {
+    width: 980px;
+    height:auto;
+    margin: auto;
+}
+
+#loginbox {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    left:200px;
+    background-image: url("../img/login_box.png");
+}
+
+#username_fld {
+    width: 296px;
+    height: 40px;
+    position:relative;
+    top:110px;
+    left:150px;
+    background-image: url("../img/field_btn.png");
+    border: none;
+    background-color: transparent;
+    padding-left: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: Pathway Gothic One;
+    
+}
+
+#password_fld {
+    width: 296px;
+    height: 40px;
+    position:relative;
+    top:110px;
+    left:150px;
+    background-image: url("../img/field_btn.png");
+    border: none;
+    background-color: transparent;
+    padding-left: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: Pathway Gothic One;
+}
+
+#login_header_text {
+    width: 340px;
+    position: relative;
+    top: 80px;
+    left: 125px;
+    text-align: center;
+    color: white;
+}
+
+#header_text_login {
+    position: relative;
+    left: 30px;
+    top:50px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#login_btn {
+    width:129px;
+    height: 54px;
+    background-image: url("../img/login_btn.png");
+    position: relative;
+    top: 120px;
+    left: 235px;
+    border: none;
+    background-color: transparent;
 }
