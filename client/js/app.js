@@ -28,13 +28,13 @@ define(["jquery", "config", "routes"], function($, config, Routes) {
 
 			var phrase = this.getPhrase(phrase);
 
-			$("#alert-text").html(phrase);
+			$("#alert-box p").html(phrase);
 
 			if ( optionalText != "" ) {
-				$("#alert-text").append(optionalText);
+				$("#alert-box p").append(optionalText);
 			}
 
-			$("#alert").show();
+			$("#alert-box").show();
 
 			if ( showOK ) {
 				$("#alert-ok").show();

@@ -1,20 +1,28 @@
 define(["jquery", "app", "auth"], function($, App, Auth) {
     
     // Handle login button click.
-	$("#loginBtn").click(function() { 
+    $('#login_form').submit(function(e) {
+        
+        e.preventDefault();
 
 		var credentials = { 
-			Username: $("#username").val(),
-			Password: $("#password").val()
+			Username: $("#username_fld").val(),
+			Password: $("#password_fld").val()
 		};
 
+        if ( !credentials.Username || !credentials.Password ) {
+            App.showAlert("empty_login");
+            //alert("No username or password has been provided!");
+            return;
+        }
+
 		// Login via the authentication system.
-		Auth.login(credentials, function(result) { 
+		/*Auth.login(credentials, function(result) { 
 			console.log(result);
 		}, 
 		function() { 
 			console.log("Failed to login! Invalid Credentials!");
-		});
+		});*/
 
 	});
    

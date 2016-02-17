@@ -7,6 +7,7 @@ requirejs.config({
     }
 })
 
-define([], function() {
+define(["jquery"], function(jquery) {
+    $("#alert-box").hide();
     require(["main"]);
 });
