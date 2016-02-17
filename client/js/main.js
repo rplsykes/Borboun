@@ -6,10 +6,16 @@ define(["jquery", "createjs", "app"], function($, createjs, App) {
 	preload.loadManifest("config/manifest.json");
 	preload.on("complete", initGame, this);
 
+	preload.on("progress", function(e) {
+		// Show loading gif.
+		$("#loading").show();
+	});
+
 	function initGame() {
 
 		// hide the alert box.
 		$("#alert-box").hide();
+		$("#loading").hide();
 
 		// init the application.
 		App.init(preload);
