@@ -2,7 +2,8 @@ html,body {
     padding:0px;
     margin:0px;
     background-image: url("../img/new_background.jpg");
-    font-family: open sans;
+    font-family: open sans; 
+    overflow: hidden;
 }
 
 #login_wrapper {
@@ -15,17 +16,17 @@ html,body {
     width: 600px;
     height: 500px;
     position: relative;
-    top: 200px;
+    top: 100px;
     left:200px;
     background-image: url("../img/login_box.png");
 }
 
 #username_fld {
-    width: 248px;
+    width: 296px;
     height: 40px;
     position:relative;
     top:110px;
-    left:170px;
+    left:150px;
     background-image: url("../img/field_btn.png");
     border: none;
     background-color: transparent;
@@ -37,11 +38,11 @@ html,body {
 }
 
 #password_fld {
-    width: 248px;
+    width: 296px;
     height: 40px;
     position:relative;
     top:110px;
-    left:170px;
+    left:150px;
     background-image: url("../img/field_btn.png");
     border: none;
     background-color: transparent;
@@ -55,9 +56,18 @@ html,body {
     width: 340px;
     position: relative;
     top: 80px;
-    left: 120px;
+    left: 125px;
     text-align: center;
     color: white;
+}
+
+#header_text_login {
+    position: relative;
+    left: 30px;
+    top:50px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
 #login_btn {
