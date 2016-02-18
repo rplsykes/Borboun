@@ -1,6 +1,7 @@
 'use strict';
 
-define(["jquery", "config", "routes"], function($, config, Routes) {
+define(["jquery", "config", "routes", "server"], 
+	function($, config, Routes, Server) {
 
 	var assets = null;
 
@@ -9,7 +10,9 @@ define(["jquery", "config", "routes"], function($, config, Routes) {
 		// Initializes the application
 		init: function(assetsList) {
 			assets = assetsList;
+
 			this.routeTo("login");
+			Server.connect();
 		},
 
 		// Grabs the site assets.

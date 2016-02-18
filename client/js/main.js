@@ -13,9 +13,10 @@ define(["jquery", "createjs", "app"], function($, createjs, App) {
 
 	function initGame() {
 
+		// hide loading gif.
+		$("#loading").hide();
 		// hide the alert box.
 		$("#alert-box").hide();
-		$("#loading").hide();
 
 		// init the application.
 		App.init(preload);

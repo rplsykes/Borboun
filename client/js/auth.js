@@ -15,11 +15,11 @@ define(["server"], function(Server) {
 			Server.connect();
 
 			// Pass login data to server.
-			Server.send('login', credentials);
+			Server.send('auth', credentials);
 
 			// Now we listen for any responses from the
 			// server.
-			Server.listen('login', function(result) {
+			Server.listen('auth', function(result) {
 
 				if ( !result ) {
 					// Failed to find user. Call failed. 

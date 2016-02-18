@@ -17,12 +17,12 @@ define(["jquery", "app", "auth"], function($, App, Auth) {
         }
 
 		// Login via the authentication system.
-		/*Auth.login(credentials, function(result) { 
-			console.log(result);
+		Auth.login(credentials, function(result) { 
+			App.routeTo("game");
 		}, 
 		function() { 
-			console.log("Failed to login! Invalid Credentials!");
-		});*/
+			App.showAlert("invalid_user");
+		});
 
 	});
    
