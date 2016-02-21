@@ -18,7 +18,8 @@ define(["jquery", "app", "auth"], function($, App, Auth) {
 
 		// Login via the authentication system.
 		Auth.login(credentials, function(result) { 
-			//App.routeTo("game");
+			App.routeTo("game");
+			
 			console.log("Successful Login!");
 			console.log(result);
 		}, 
