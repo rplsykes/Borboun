@@ -19,7 +19,7 @@ module.exports = {
 		Host: "localhost",
 		User: "root",
 		Password: "",
-		database: "last_gate"
+		Database: "last_gate"
 	}
 
 };

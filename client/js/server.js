@@ -7,9 +7,7 @@ define(["config", "app"], function(config, App) {
 	return {
 
 		connect: function() {
-
 			socket = io.connect(config.ServerHost);
-			this.send("auth", { "username" : "test", "password" : "password" });
 		},
 
 		send: function(tag, data) {

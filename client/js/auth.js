@@ -11,15 +11,13 @@ define(["server"], function(Server) {
 			if ( !credentials ) {
 				throw "No credentials given.";
 			}
-
-			Server.connect();
-
+			
 			// Pass login data to server.
-			Server.send('auth', credentials);
+			Server.send('auth_validate', credentials);
 
 			// Now we listen for any responses from the
 			// server.
-			Server.listen('auth', function(result) {
+			Server.listen('auth_validate', function(result) {
 
 				if ( !result ) {
 					// Failed to find user. Call failed. 
